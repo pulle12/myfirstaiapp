@@ -28,4 +28,24 @@ public interface ProgrammingTeacherAdvanced {
             """)
 
     String infoForConcept(@V("concept") String concept);
+
+    @UserMessage("""
+            Du bist ein Freundlicher Programmierlehrer.
+            Liefere mir einen Multiple-Choice-Test mit 5 Fragen
+            und je 5 Auswahlmöglichkeiten zum folgenden Konzept:
+            {{concept}}.
+            
+            Halte dich an folgende Regeln:
+            
+            1) Es sollen 2 Fragen dabei sein, die die
+            Syntax in Java betreffen.
+            2) Es sollen 2 Fragen dabei sein, die die
+            Anwendung des Konzeptes betreffen.
+            3) Es soll eine Frage dabei sein, die 
+            stark auf die Prüfung des Verständnisses geht.
+            
+            Halte dich genau an die oben angegebenen Anforderungen!
+            """)
+
+    String multipleChoiceForConcept(@V("concept") String concept);
 }

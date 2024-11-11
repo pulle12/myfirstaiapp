@@ -21,10 +21,16 @@ public class MyfirstaiappApplication implements ApplicationRunner {
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 		//System.out.println(programmingTeacherAdvanced.chat("Zeige mir wie man ein Hallo Welt Programm in Java programmiert."));
-		Scanner scan = new Scanner(System.in);
+		/*Scanner scan = new Scanner(System.in);
 		System.out.println("Für welches Programmiersprachenkonzept möchtest du eine Erklärung?");
 		String konzept = scan.nextLine();
 		String ergebnis = programmingTeacherAdvanced.infoForConcept(konzept);
+		System.out.println(ergebnis);*/
+
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Für welches Programmiersprachenkonzept möchtest du einen MC-Test?");
+		String konzept = scan.nextLine();
+		String ergebnis = programmingTeacherAdvanced.multipleChoiceForConcept(konzept);
 		System.out.println(ergebnis);
 	}
 }
