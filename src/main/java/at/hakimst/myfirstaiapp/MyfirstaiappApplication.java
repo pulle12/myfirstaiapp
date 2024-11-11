@@ -24,6 +24,7 @@ public class MyfirstaiappApplication implements ApplicationRunner {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Für welches Programmiersprachenkonzept möchtest du eine Erklärung?");
 		String konzept = scan.nextLine();
-		programmingTeacherAdvanced.infoForConcept(konzept);
+		String ergebnis = programmingTeacherAdvanced.infoForConcept(konzept);
+		System.out.println(ergebnis);
 	}
 }
